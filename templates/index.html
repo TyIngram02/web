@@ -1,0 +1,29 @@
+<!---->
+<!DOCTYPE html>
+<link rel ="stylesheet" href="/static/style.css" />
+<html>
+<head>
+</head>
+<body>
+ <table class = "table">
+  <tr class="table__header">
+    {% for header in headings %}
+        <th class = "table__cell1">{{ header }}</th>
+    {% endfor %}
+  </tr>
+    {% for row in tabled_data %}
+  <tr classs = "table__row">
+     <td class="table__cell">{{ row.Name }}</td>
+     <td class="table__cell">{{ row.Stat }}</td>
+     <td class="table__cell">{{ row.Team }}</td>
+     <td class="table__cell">{{ row.PP }}</td>
+     <td class="table__cell">{{ row.UD }}</td>
+     <td class="table__cell">{{ row.Dif }}</td>
+  </tr>
+    {% endfor %}
+    </tr>
+  </tr>
+ </table>
+</body>
+</body>
+</html>
